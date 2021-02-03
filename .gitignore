@@ -1,0 +1,14 @@
+*.iml
+*.ipr
+*.iws
+.idea/
+/build/
+/dist/
+/out/
+./iptablesmanager
+iptablesmanager/
+k8s-helloword-operator/
+k8soperastorbk/
+mutilsite/
+test/
+
