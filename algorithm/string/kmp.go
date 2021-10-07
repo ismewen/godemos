@@ -55,19 +55,20 @@ func GetNext(s string) []int {
 		for j < len(s) {
 			if s[i] == s[j] {
 				j++
-				next[i]  = j
+				next[i] = j
 				i++
-			}else if j == 0 {
-				next[i]	= 0
+			} else if j == 0 {
+				next[i] = 0
 				i++
 				break
-			}else{
+			} else {
 				j = next[j-1]
 			}
 		}
 	}
 	return next
 }
+
 
 func Kmp(m string, s string) bool {
 	next := GetNext(s)
